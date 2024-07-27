@@ -56,6 +56,10 @@ function append_display(input) {
             display.value = input;
             hidden_display = input;
         }
+        if (input == ".") {
+            display.value += ".";
+            hidden_display += ".";
+        }
     }
 }
 
