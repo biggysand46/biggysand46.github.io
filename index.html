@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Windows Calculator</title>
+    </head>
+    <body>
+        <div class="calculator" id="calc">
+            <div class="topbar" id="topbar">
+                <img class="item item-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKpJREFUSEvtlesJwzAMhO82aTZpJiuZJKtkk3QTFRcSgiPbkYJCCdUfY/z48J3MEcHF4PuxA4jIE8ALQBotNQEYSKZxLQ0wA3hYbt7snUj2LYCkDSRN8omIek57wU0ATg920hYlugSwGJ0bWJprzVF9QTjAI1Pe3n8PvgospptNbnmQN8HvAcLbNBzQ8kBbP/IPzgTOm2TXCpwUlaMj1Y5FpkeW2hlTLHrgH9Abshl4fW0fAAAAAElFTkSuQmCC"/>
+                <h4 class="item item-label">Calculator</h4>
+            </div>
+            <div class="result">
+                <input class="calculation" id="display" type="text" value="3.141592">
+            </div>
+            <div class="buttons">
+                <button class="button button-sqr unique" id="squared" onclick="square_display()"></button>
+                <button class="button button-sqroot unique" onclick="root_display()">root</button>
+                <button class="button button-clear unique" onclick="clear_display()">C</button>
+                <button class="button button-back unique" onclick="backspace()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKlJREFUSEvtlNsNgCAMRXs31UnUSXQ0naRKAgaJfRjgT79MLpyTlgKo84fOfPoFZofdLWLmlYh2AEtJ1TKXIAKGCJ5ziZaF9aagAIQ9G4Ax/GhZqlIV1MLVClrARUEr+KugJVwSTFcwZ6N4Tw0zi5l0IV4PWQN9lYhT1EpijWl1uzwXrUpiCuKNzSUjgC0datHKR+Z6KgrQkcM9masC801WFvwCs3vdW3QCSGeMGeISG4IAAAAASUVORK5CYII="/></button>
+                <button class="button button-7 number" onclick="append_display('7')">7</button>
+                <button class="button button-8 number" onclick="append_display('8')">8</button>
+                <button class="button button-9 number" onclick="append_display('9')">9</button>
+                <button class="button button-add unique" onclick="append_display('+')">+</button>
+                <button class="button button-4 number" onclick="append_display('4')">4</button>
+                <button class="button button-5 number" onclick="append_display('5')">5</button>
+                <button class="button button-6 number" onclick="append_display('6')">6</button>
+                <button class="button button-subtract unique" onclick="append_display('-')">-</button>
+                <button class="button button-1 number" onclick="append_display('1')">1</button>
+                <button class="button button-2 number" onclick="append_display('2')">2</button>
+                <button class="button button-3 number" onclick="append_display('3')">3</button>
+                <button class="button button-multiply unique" onclick="append_display('*')">x</button>
+                <button class="button button-decimal unique" onclick="append_display('.')">.</button>
+                <button class="button button-0 number" onclick="append_display('0')">0</button>
+                <button class="button button-equal unique" onclick="calculate_display()">=</button>
+                <button class="button button-divide unique" onclick="append_display('/')">÷</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
